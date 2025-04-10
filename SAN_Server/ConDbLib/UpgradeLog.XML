@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ConDbLib">
+</Property><Property Name="Solution File" Value="F:\My Project\MCA\Projecct\Final Project\ConDbLib\ConDbLib.sln">
+</Property><Property Name="Date" Value="Saturday, March 03, 2007">
+</Property><Property Name="Time" Value="23:59 PM">
+</Property></Properties><Event ErrorLevel="0" Project="ConDbLib" Source="ConDbLib.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ConDbLib" Source="ConDbLib.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ConDbLib.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ConDbLib.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ConDbLib" Source="ConDbLib.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

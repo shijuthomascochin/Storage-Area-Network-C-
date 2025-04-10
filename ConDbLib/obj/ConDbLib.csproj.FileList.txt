@@ -1,0 +1,5 @@
+bin\Debug\ConDbLib.dll
+bin\Debug\ConDbLib.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\ConDbLib.dll
+obj\Debug\ConDbLib.pdb

@@ -1,0 +1,12 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SAN_Server.Form1.resources
+obj\Debug\SAN_Server.Properties.Resources.resources
+obj\Debug\SAN_Server.csproj.GenerateResource.Cache
+bin\Debug\SAN_Server.exe
+bin\Debug\SAN_Server.pdb
+bin\Debug\Cinter.dll
+bin\Debug\ConDbLib.dll
+bin\Debug\Cinter.pdb
+bin\Debug\ConDbLib.pdb
+obj\Debug\SAN_Server.exe
+obj\Debug\SAN_Server.pdb
