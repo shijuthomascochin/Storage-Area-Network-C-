@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using ConDbLib;
+namespace Server
+{
+    public partial class Edit_IpAddress : Form
+    {
+        CDB obj = new CDB();
+        public Edit_IpAddress()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void Edit_IpAddress_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                obj.OpenConnection();
+                DataTable dt = obj.getRecord("SELECT Ip_No FROM Ip_Address");
+                foreach (DataRow dr in dt.Rows)
+                {
+                    comboBox1.Items.Add(dr[0].ToString());
+                }
+                obj.close();
+            }
+            catch (Exception)
+            { 
+            }
+        
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+                o
+            }
+            catch (Exception)
+            { 
+            }
+
+        }
+    }
+}

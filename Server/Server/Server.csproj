@@ -1,0 +1,257 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D6D888D-42BF-44CB-AC1F-05CCB72307D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cinter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Cinter\Cinter\bin\Debug\Cinter.dll</HintPath>
+    </Reference>
+    <Reference Include="ConDbLib, Version=1.0.2965.21248, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ConDbLib\bin\Debug\ConDbLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Edit.designer.cs">
+      <DependentUpon>Account_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Account_Type.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Account_Type.Designer.cs">
+      <DependentUpon>Account_Type.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator.designer.cs">
+      <DependentUpon>Administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrator_Home.designer.cs">
+      <DependentUpon>Administrator_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Branch_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Branch_Add.Designer.cs">
+      <DependentUpon>Branch_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Branch_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Branch_Edit.Designer.cs">
+      <DependentUpon>Branch_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRem.cs" />
+    <Compile Include="Edit_IpAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_IpAddress.Designer.cs">
+      <DependentUpon>Edit_IpAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Job.Designer.cs">
+      <DependentUpon>Edit_Job.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPtable_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IPtable_Add.Designer.cs">
+      <DependentUpon>IPtable_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Job_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Job_Add.Designer.cs">
+      <DependentUpon>Job_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LinClient.cs" />
+    <Compile Include="SanServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SanServer.Designer.cs">
+      <DependentUpon>SanServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oneclient.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Account_Edit.resx">
+      <DependentUpon>Account_Edit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Account_Type.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Account_Type.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator.resx">
+      <DependentUpon>Administrator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrator_Home.resx">
+      <DependentUpon>Administrator_Home.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Branch_Add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Branch_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Branch_Edit.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Branch_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_IpAddress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Edit_IpAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Job.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Edit_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IPtable_Add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>IPtable_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Job_Add.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Job_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SanServer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SanServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Account.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>View_Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Branch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>View_Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_IpAddress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>View_IpAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Job.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>View_Job.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ServerThread.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Account.Designer.cs">
+      <DependentUpon>View_Account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Branch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Branch.Designer.cs">
+      <DependentUpon>View_Branch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_IpAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_IpAddress.Designer.cs">
+      <DependentUpon>View_IpAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Job.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Job.Designer.cs">
+      <DependentUpon>View_Job.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
