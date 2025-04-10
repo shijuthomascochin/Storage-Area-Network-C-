@@ -1,0 +1,5 @@
+bin\Debug\Cinter.dll
+bin\Debug\Cinter.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Cinter.dll
+obj\Debug\Cinter.pdb
